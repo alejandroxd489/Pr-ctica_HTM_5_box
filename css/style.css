@@ -1,0 +1,112 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO */
+body{
+    background-color:#000;
+    color:white;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+    position:sticky;
+    top:0;
+    background:black;
+    border-bottom:2px solid orange;
+}
+
+/* BOTONES */
+.nav a{
+    text-decoration:none;
+    color:orange;
+    border:2px solid orange;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.nav a:hover{
+    background:orange;
+    color:black;
+    box-shadow:0 0 10px orange;
+    transform:translateY(-3px);
+}
+
+.nav a:active{
+    transform:scale(0.95);
+}
+
+/* SECCIÓN */
+.seccion{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+/* CARD */
+.card{
+    max-width:900px;
+    background:#111;
+    border:2px solid orange;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,165,0,0.2);
+}
+
+/* TITULO */
+.card h2{
+    text-align:center;
+    color:orange;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+/* SUBTITULOS */
+.card h3{
+    margin-top:30px;
+    margin-bottom:10px;
+    color:orange;
+}
+
+/* TEXTO */
+.card p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* LISTAS */
+.card ul{
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+/* IMÁGENES */
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin:10px 0;
+    border:2px solid orange;
+    transition:0.3s;
+}
+
+.card img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 15px orange;
+}
+
+/* SCROLL SUAVE */
+html{
+    scroll-behavior:smooth;
+  }
