@@ -1,109 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Boxeo</title>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO */
+body{
+    background-color:#000;
+    color:white;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+    position:sticky;
+    top:0;
+    background:black;
+    border-bottom:2px solid orange;
+}
+
+/* BOTONES */
+.nav a{
+    text-decoration:none;
+    color:orange;
+    border:2px solid orange;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+/* HOVER */
+.nav a:hover{
+    background:orange;
+    color:black;
+    box-shadow:0 0 10px orange;
+    transform:translateY(-3px);
+}
+
+/* CLICK */
+.nav a:active{
+    transform:scale(0.95);
+}
+
+/* SECCIÓN */
+.seccion{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+/* CARD */
+.card{
+    max-width:900px;
+    background:#111;
+    border:2px solid orange;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,165,0,0.2);
+}
+
+/* TITULO */
+.card h2{
+    text-align:center;
+    color:orange;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+/* SUBTITULOS */
+.card h3{
+    margin-top:30px;
+    margin-bottom:10px;
+    color:orange;
+}
+
+/* TEXTO */
+.card p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* LISTAS */
+.card ul{
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+/* IMÁGENES */
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin:10px 0;
+    border:2px solid orange;
+    transition:0.3s;
+}
+
+/* EFECTO IMG */
+.card img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 15px orange;
+}
+
+/* SCROLL SUAVE */
+html{
+    scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BOTONES -->
+<div class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#quees">¿Qué es?</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#ejemplos">Ejemplos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#opinion">Opinión</a>
+</div>
+
+<!-- CONTENIDO -->
 <section class="seccion">
 <article class="card">
 
-<h2>BOXEO</h2>
+<h2>🥊 BOXEO</h2>
 
 <!-- INICIO -->
-<h3>Inicio</h3>
+<h3 id="inicio">Inicio</h3>
 <img src="img/inicio1.jpg">
 <img src="img/inicio2.jpg">
-
-<p>
-El boxeo es un deporte de combate que combina fuerza, velocidad, resistencia y estrategia.
-Es practicado en todo el mundo tanto a nivel amateur como profesional.
-</p>
-
-<p>
-Además de ser un deporte físico, también desarrolla habilidades mentales como disciplina,
-control emocional y concentración.
-</p>
+<p>El boxeo es un deporte de combate que combina fuerza, velocidad, resistencia y estrategia.</p>
+<p>Es practicado en todo el mundo y es considerado uno de los deportes más antiguos.</p>
+<p>También desarrolla disciplina, control emocional y concentración.</p>
 
 <!-- QUE ES -->
-<h3>¿Qué es el boxeo?</h3>
+<h3 id="quees">¿Qué es el boxeo?</h3>
 <img src="img/quees1.jpg">
 <img src="img/quees2.jpg">
-
-<p>
-El boxeo es un deporte de contacto donde dos oponentes se enfrentan utilizando golpes con los puños dentro de un ring.
-</p>
-
-<p>
-Se divide en rounds y se puede ganar por puntos o por nocaut.
-</p>
-
-<p>
-Existen reglas para proteger a los boxeadores, como el uso de guantes y supervisión arbitral.
-</p>
+<p>El boxeo es un deporte de contacto donde dos oponentes pelean con los puños dentro de un ring.</p>
+<p>Se divide en rounds y se puede ganar por puntos o nocaut.</p>
+<p>Existen reglas para proteger a los boxeadores.</p>
 
 <!-- CARACTERISTICAS -->
-<h3>Características</h3>
+<h3 id="caracteristicas">Características</h3>
 <img src="img/carac1.jpg">
 <img src="img/carac2.jpg">
-
 <ul>
-<li>Gran resistencia física</li>
-<li>Velocidad y reflejos</li>
-<li>Estrategia en combate</li>
-<li>Disciplina constante</li>
-<li>Entrenamiento exigente</li>
+<li>Resistencia física</li>
+<li>Velocidad</li>
+<li>Reflejos</li>
+<li>Estrategia</li>
+<li>Disciplina</li>
 </ul>
-
-<p>
-El boxeo requiere una preparación completa, tanto física como mental.
-</p>
-
-<p>
-Los golpes más utilizados son el jab, el gancho y el uppercut.
-</p>
+<p>Los golpes más comunes son jab, gancho y uppercut.</p>
 
 <!-- EJEMPLOS -->
-<h3>Ejemplos de boxeadores</h3>
+<h3 id="ejemplos">Ejemplos de boxeadores</h3>
 <img src="img/ali.jpg">
 <img src="img/tyson.jpg">
 <img src="img/canelo.jpg">
-
-<p>
-A lo largo de la historia han existido grandes boxeadores:
-</p>
-
 <ul>
-<li>Muhammad Ali - velocidad y técnica</li>
-<li>Mike Tyson - potencia</li>
-<li>Canelo Álvarez - precisión</li>
+<li>Muhammad Ali</li>
+<li>Mike Tyson</li>
+<li>Canelo Álvarez</li>
 </ul>
-
-<p>
-Cada uno ha dejado una gran huella en el mundo del boxeo.
-</p>
+<p>Estos boxeadores marcaron la historia del deporte.</p>
 
 <!-- GALERIA -->
-<h3>Galería</h3>
+<h3 id="galeria">Galería</h3>
 <img src="img/g1.jpg">
 <img src="img/g2.jpg">
 <img src="img/g3.jpg">
 <img src="img/g4.jpg">
-
-<p>
-El boxeo es un deporte lleno de intensidad y emoción.
-Cada combate representa una batalla de habilidades físicas y mentales.
-</p>
+<p>El boxeo es intenso, emocionante y muy competitivo.</p>
 
 <!-- OPINION -->
-<h3>Opinión</h3>
+<h3 id="opinion">Opinión</h3>
 <img src="img/op1.jpg">
 <img src="img/op2.jpg">
-
-<p>
-El boxeo es mucho más que un deporte, es una disciplina que forma carácter.
-</p>
-
-<p>
-En mi opinión, enseña valores como el respeto, la perseverancia y el autocontrol.
-</p>
-
-<p>
-También es una excelente forma de mantenerse en forma y liberar estrés.
-</p>
+<p>El boxeo es una disciplina que forma carácter.</p>
+<p>Enseña respeto, esfuerzo y perseverancia.</p>
+<p>También es excelente para la salud física y mental.</p>
 
 </article>
-    </section>
+</section>
+
+<script>
+console.log("Página lista 🔥");
+</script>
+
+</body>
+</html> 
